@@ -14,7 +14,7 @@ import (
 func TestInfoLog(t *testing.T) {
 	Info("info log message")
 
-	file, err := os.Open("info.log")
+	file, err := os.Open("/tmp/info.log")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -28,7 +28,7 @@ func TestInfoLog(t *testing.T) {
 func TestErrorLog(t *testing.T) {
 	Error("Error log message Sample")
 
-	file, err := os.Open("info.log")
+	file, err := os.Open("/tmp/info.log")
 	if err != nil {
 		log.Fatal(err)
 	}
